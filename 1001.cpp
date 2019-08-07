@@ -10,7 +10,7 @@ int abs(int a)
 }
 
 int main()
-{
+{ 
 	int inputa, inputb;
 	while (cin >> inputa >> inputb)
 	{
