@@ -11,7 +11,7 @@ bool cmp(pair<int,double> left,pair<int,double> right)
 }
 
 int main()
-{
+{ 
 	int testa, testb;
 	vector<pair<int, double>> store, result;
 	while (cin >> testa)
