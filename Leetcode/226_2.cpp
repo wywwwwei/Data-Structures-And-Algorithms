@@ -1,5 +1,5 @@
 /**
- * 226. 翻转二叉树  递归DFS
+ * 226. 翻转二叉树 递归DFS
  * link: https://leetcode-cn.com/problems/invert-binary-tree/
  */
 
