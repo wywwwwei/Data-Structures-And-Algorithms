@@ -1,3 +1,7 @@
+/**
+ * 1001 A+B Format
+ * link: https://pintia.cn/problem-sets/994805342720868352/problems/994805528788582400
+ */
 #include<iostream>
 #include<string>
 
