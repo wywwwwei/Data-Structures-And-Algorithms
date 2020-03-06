@@ -16,7 +16,6 @@ class MaxQueue
             sortNext = NULL;
         }
     };
-    int maxVal;
 
     Node *head;
     Node *tail;
@@ -25,7 +24,6 @@ class MaxQueue
 public:
     MaxQueue()
     {
-        maxVal = -1;
         head = NULL;
         tail = NULL;
         sortHead = NULL;
