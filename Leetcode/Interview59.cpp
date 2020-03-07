@@ -17,8 +17,12 @@ class MaxQueue
         }
     };
 
+    //Maintain the queue implemented by a linked list through head and tail
     Node *head;
     Node *tail;
+    //A secondary queue that stores the maximum value through sortHead
+    //Because the title does not mention that the insertion value must be different,
+    //the same node pointer is used in the two queues.
     Node *sortHead;
 
 public:
@@ -41,7 +45,14 @@ public:
     void push_back(int value)
     {
         Node *newNode = new Node(value);
-
+        /**
+         * If the value of push_back() is greater than current max_value()
+         * it means that the node that current max_value() points to will not affect the maximum value if it is popped,
+         * so empty the auxiliary queue and insert the node(value)
+         * 
+         * Otherwise, the first node that is less than or equal to value is found for replacement 
+         * according to the queue pointed by sortHead
+         */
         if (max_value() <= value)
         {
             this->sortHead = newNode;
