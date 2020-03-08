@@ -1,6 +1,6 @@
 /**
  * 88. 合并两个有序数组 双指针从尾部开始比较
- * link：https://leetcode-cn.com/problems/valid-palindrome-ii/
+ * link：https://leetcode-cn.com/problems/merge-sorted-array/
  */
 
 class Solution
