@@ -8,7 +8,6 @@ class Solution
 public:
     struct pos
     {
-        int dis;
         int x;
         int y;
     };
@@ -28,7 +27,7 @@ public:
                 if (grid[i][j])
                 {
                     visit[i][j] = true;
-                    q.push(pos{0, i, j});
+                    q.push(pos{i, j});
                 }
             }
         }
@@ -39,21 +38,24 @@ public:
         int move[4][2] = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
         while (!q.empty())
         {
-            pos temp = q.front();
-            q.pop();
-
-            for (int i = 0; i < 4; i++)
+            int n = q.size();
+            result++;
+            for (int times = 0; times < n; times++)
             {
-                int dx = temp.x + move[i][0];
-                int dy = temp.y + move[i][1];
-                if (dx < 0 || dx >= grid_len || dy < 0 || dy >= grid_len)
-                    continue;
-
-                if (!visit[dx][dy])
+                pos temp = q.front();
+                q.pop();
+                for (int i = 0; i < 4; i++)
                 {
-                    visit[dx][dy] = true;
-                    q.push(pos{temp.dis + 1, dx, dy});
-                    result = max(result, temp.dis + 1);
+                    int dx = temp.x + move[i][0];
+                    int dy = temp.y + move[i][1];
+                    if (dx < 0 || dx >= grid_len || dy < 0 || dy >= grid_len)
+                        continue;
+
+                    if (!visit[dx][dy])
+                    {
+                        visit[dx][dy] = true;
+                        q.push(pos{dx, dy});
+                    }
                 }
             }
         }
