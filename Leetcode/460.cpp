@@ -3,6 +3,12 @@
  * link：https://leetcode-cn.com/problems/lfu-cache/
  */
 
+/**
+ *  get(key) -> O(1) -> hashmap -> unordered_map key_map
+ *  get(least frequency) -> O(1) -> hashmap -> unordered_map freq_map
+ *  delete(least frequency) -> O(1) -> any sequence container with hash -> freq_map's template is <int,List/Array...>
+ */
+
 class LFUCache
 {
 private:
