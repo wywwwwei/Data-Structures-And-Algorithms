@@ -1,6 +1,6 @@
 /**
  * 1095. 山脉数组中查找目标值
- * link：https://leetcode-cn.com/problems/find-in-mountain-array/
+ * link：https://leetcode-cn.com/problems/find-in-mountain-array/ 
  */
 
 /**
