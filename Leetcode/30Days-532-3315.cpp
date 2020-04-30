@@ -1,5 +1,5 @@
 /**
- * Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree  DFS
+ * Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree  DFS 
  * link：https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/532/week-5/3315/
  */
 
