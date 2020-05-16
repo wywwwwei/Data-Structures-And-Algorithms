@@ -12,6 +12,12 @@
  * };
  */
 
+/**
+ * node_1 -> node_2 -> node_3 <- node_4 <- node_5
+ * |<-    not reversed  ->|<-    reversed     ->|
+ * node_2 -> next -> next = node_3 ->next = node_2
+ */
+
 class Solution
 {
 public:
@@ -30,7 +36,7 @@ public:
         ListNode *res = reverse(head->next);
         head->next->next = head;
         head->next = nullptr;
-        
+
         return res;
     }
 };
