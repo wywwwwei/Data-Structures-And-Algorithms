@@ -143,6 +143,8 @@ class AVLTree
     {
         if (cur == nullptr)
             return new TreeNode(val);
+        else if(cur->val == val)
+            return cur;
         else if (cur->val > val)
             cur->left = insertAndBalance(cur->left, val);
         else
@@ -264,6 +266,7 @@ void test()
     test.insert(12);
     test.insert(14);
     test.insert(16);
+    test.insert(18);
     test.insert(18);
     test.insert(20);
     test.preOrderTraverse();
