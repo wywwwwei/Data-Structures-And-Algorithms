@@ -289,7 +289,7 @@ public:
         while (tmp != nullptr)
         {
             int position = 0;
-            while (position < tmp->count && tmp->values[position] > target)
+            while (position < tmp->count && tmp->values[position] < target)
                 position++;
             if (position < tmp->count && tmp->values[position] == target)
                 return tmp;
@@ -351,6 +351,8 @@ void test()
     test.insert(6);
     test.insert(7);
     test.traverse();
+    cout << (test.contains(7) ? "Contains 7" : "Not contains 7") << endl;
+    cout << (test.contains(8) ? "Contains 8" : "Not contains 8") << endl;
     test.remove(2);
     test.traverse();
     test.remove(5);
@@ -365,6 +367,8 @@ void test()
     test.traverse();
     test.remove(3);
     test.traverse();
+    cout << (test.contains(7) ? "Contains 7" : "Not contains 7") << endl;
+    cout << (test.contains(1) ? "Contains 1" : "Not contains 1") << endl;
 }
 
 int main()
