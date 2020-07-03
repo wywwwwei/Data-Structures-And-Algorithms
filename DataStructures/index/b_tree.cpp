@@ -136,8 +136,8 @@ struct BTreeNode
         child->children[child->count + 1] = sibling->children[0];
         this->values[position] = sibling->values[0];
 
-        memmove(sibling->values, &sibling->values[1], sizeof(Record) * (child->count - 1));
-        memmove(sibling->children, &sibling->children[1], sizeof(Record) * child->count);
+        memmove(sibling->values, &sibling->values[1], sizeof(Record) * (sibling->count - 1));
+        memmove(sibling->children, &sibling->children[1], sizeof(Record) * sibling->count);
 
         sibling->count--;
         child->count++;
@@ -309,7 +309,7 @@ public:
         if (this->root == nullptr)
             this->root = new BTreeNode<Record, order>(true);
 
-        Record newVal = 0;
+        Record newVal;
         BTreeNode<Record, order> *newBranch = nullptr;
         insert(this->root, val, newBranch, newVal);
         if (newBranch != nullptr)
