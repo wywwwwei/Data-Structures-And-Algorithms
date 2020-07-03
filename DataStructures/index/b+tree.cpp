@@ -388,6 +388,8 @@ void test()
     test.insert(10);
     test.insert(9);
     test.traverse();
+    cout << (test.contains(6) ? "Contains 6" : "Not contains 6") << endl;
+    cout << (test.contains(7) ? "Contains 7" : "Not contains 7") << endl;
     test.remove(8);
     test.remove(10);
     test.remove(1);
@@ -398,8 +400,8 @@ void test()
     test.traverse();
     test.remove(5);
     test.traverse();
-    cout << (test.contains(6) ? "Contain 6" : "Not contain 6") << endl;
-    cout << (test.contains(7) ? "Contain 7" : "Not contain 7") << endl;
+    cout << (test.contains(6) ? "Contains 6" : "Not contains 6") << endl;
+    cout << (test.contains(7) ? "Contains 7" : "Not contains 7") << endl;
 }
 
 int main()
