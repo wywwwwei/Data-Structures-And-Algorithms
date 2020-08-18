@@ -5,9 +5,9 @@
 
 /**
  * Solution:
- * 1. Find all substrings and check them.   -> Substring O(N^2) * Check O(N) = O(N^3)
- * 2. Expand Around Center (Find all possible middle of the palindrome) -> Center O(N) * Expand O(N) = O(N^2)
- * 3. Manacher's Algorithm
+ * 1. Find all substrings and check them.   -> Time: Substring O(N^2) * Check O(N) = O(N^3)     Space: O(1)
+ * 2. Expand Around Center (Find all possible middle of the palindrome) -> Center O(N) * Expand O(N) = O(N^2)   Space: O(1)
+ * 3. Manacher's Algorithm  -> Time: O(N)   Space: O(N)
  */
 
 class Solution
