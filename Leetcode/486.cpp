@@ -22,10 +22,7 @@ public:
         if (n % 2 == 0)
             return true;
 
-        vector<int> dp(n, 0);
-
-        for (int i = 0; i < n; i++)
-            dp[i] = nums[i];
+        vector<int> dp(nums);
 
         for (int j = 1; j < n; j++)
             for (int i = 0; i < n - j; i++)
