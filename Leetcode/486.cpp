@@ -4,6 +4,9 @@
  */
 
 /**
+ * A more detailed explanation is available at
+ * 877. Stone Game  https://leetcode-cn.com/problems/stone-game/
+ * 
  * 1. An even number of scores
  * As long as the first hand selects all scores with odd or even indexes, the first hand wins
  * s(odd) >= s(even) -> choose all scores with odd indexes
