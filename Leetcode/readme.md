@@ -10,5 +10,5 @@
 |               Quickselect               | Finding the k-th smallest / largest number in a list or array | [215](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/) |
 |      Median of medians / **BFPRT**      | Finding the k-th smallest / largest number in a list or array | [215](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/) |
 | **Boyer–Moore** majority vote algorithm |        Finding the majority of a sequence of elements        |  [169](https://leetcode-cn.com/problems/majority-element/)   |
-|            Morris traversal             |  Inorder Tree Traversal without recursion and without stack  | [94](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/) |
+|            Morris traversal             |  Inorder Tree Traversal without recursion and without stack  | [94](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/) / [538](https://leetcode-cn.com/problems/convert-bst-to-greater-tree/) |
 
