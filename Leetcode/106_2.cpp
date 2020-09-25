@@ -27,37 +27,45 @@
  *      2. a(b) represents a root node : you can start building the left node of a
  *        and the left node must be the next b
  */
-class Solution {
+class Solution
+{
 public:
-    TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder) {
+    TreeNode *buildTree(vector<int> &inorder, vector<int> &postorder)
+    {
         //Consider the case where the input is empty
-        if(inorder.empty()||postorder.empty()) return NULL;
-        
-        stack<TreeNode*> rootNode;
+        if (inorder.empty() || postorder.empty())
+            return NULL;
+
+        stack<TreeNode *> rootNode;
 
         TreeNode *root = new TreeNode(postorder.back());
         rootNode.push(root);
         postorder.pop_back();
 
-        while(!postorder.empty()){
+        while (!postorder.empty())
+        {
             TreeNode *curRoot = nullptr;
 
             //After this cycle
             //Situation 1.1 --> curRoot = nullptr --> next a is the right node
             //Situation 2.1 --> loop 2 times --> curRoot = rootNode --> next b is the left node
             //Situation 2.2 --> loop 1 time --> curRoot = rootNode --> next b is the left node
-            while(!rootNode.empty() && inorder.back() == rootNode.top()->val){
+            while (!rootNode.empty() && inorder.back() == rootNode.top()->val)
+            {
                 curRoot = rootNode.top();
                 rootNode.pop();
-                inorder.pop_back();  
+                inorder.pop_back();
             }
 
             TreeNode *cur = new TreeNode(postorder.back());
             postorder.pop_back();
 
-            if(!curRoot){
+            if (!curRoot)
+            {
                 rootNode.top()->right = cur;
-            }else{
+            }
+            else
+            {
                 curRoot->left = cur;
             }
 
