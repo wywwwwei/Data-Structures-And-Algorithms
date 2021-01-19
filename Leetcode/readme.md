@@ -14,4 +14,6 @@
 |     The Dutch national flag problem     |                Sort an array of 0s, 1s and 2s                |     [75](https://leetcode-cn.com/problems/sort-colors/)      |
 |        The Sieve of Eratosthenes        |       Finding all prime numbers up to any given limit        |    [204](https://leetcode-cn.com/problems/count-primes/)     |
 |              Euler's sieve              |       Finding all prime numbers up to any given limit        |    [204](https://leetcode-cn.com/problems/count-primes/)     |
+|           Kruskal's algorithm           |                    Minimum spanning tree                     | [1584](https://leetcode-cn.com/problems/min-cost-to-connect-all-points/) |
+|            Prim's algorithm             |                    Minimum spanning tree                     | [1584](https://leetcode-cn.com/problems/min-cost-to-connect-all-points/) |
 
