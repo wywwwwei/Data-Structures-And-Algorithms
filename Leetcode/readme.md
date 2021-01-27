@@ -16,4 +16,5 @@
 |              Euler's sieve              |       Finding all prime numbers up to any given limit        |    [204](https://leetcode-cn.com/problems/count-primes/)     |
 |           Kruskal's algorithm           |                    Minimum spanning tree                     | [1584](https://leetcode-cn.com/problems/min-cost-to-connect-all-points/) |
 |            Prim's algorithm             |                    Minimum spanning tree                     | [1584](https://leetcode-cn.com/problems/min-cost-to-connect-all-points/) |
+|           Tarjan's algorithm            | Finding the strongly connected components of a directed graph | [1489](https://leetcode-cn.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/) |
 
