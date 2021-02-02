@@ -12,7 +12,7 @@ public:
 
         int left = 0, right = 0;
         int n = s.length();
-        int longest;
+        int longest = 0;
         while (right < n)
         {
             ++store[s[right] - 'A'];
