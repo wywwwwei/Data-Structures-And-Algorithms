@@ -11,17 +11,11 @@ public:
         int m = matrix.size();
         int n = matrix[0].size();
 
-        for (int i = 0; i < n; i++)
-        {
-            for (int j = 1; j < m; j++)
-            {
-                for (int z = i + 1; z < n; z++)
-                {
-                    if (matrix[j][z] != matrix[j - 1][z - 1])
-                        return false;
-                }
-            }
-        }
+        for (int i = 0; i < m; ++i)
+            for (int j = 0; j < n; ++j)
+                if (i > 0 && j > 0 && matrix[i - 1][j - 1] != matrix[i][j])
+                    return false;
+
         return true;
     }
 };
