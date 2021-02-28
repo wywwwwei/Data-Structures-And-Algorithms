@@ -6,13 +6,13 @@
 class NumArray
 {
 private:
-    vector<int>result;
+    vector<int> result;
 
 public:
     NumArray(vector<int> &nums)
     {
         int n = nums.size();
-        result.resize(n+1,0);
+        result.resize(n + 1, 0);
         for (int i = 0; i < n; i++)
         {
             result[i + 1] = result[i] + nums[i];
