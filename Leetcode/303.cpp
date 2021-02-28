@@ -1,6 +1,6 @@
 /**
- * 2. 两数相加 一般的进位加减
- * link：https://leetcode-cn.com/problems/range-sum-query-immutable/submissions/
+ * 303. 区域和检索 - 数组不可变
+ * link：https://leetcode-cn.com/problems/range-sum-query-immutable/
  */
 
 class NumArray
