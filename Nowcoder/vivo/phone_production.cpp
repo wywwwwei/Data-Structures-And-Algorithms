@@ -25,8 +25,3 @@ public:
         return result;
     }
 };
-
-int main()
-{
-    cout << Solution().solution(11) << endl;
-}
