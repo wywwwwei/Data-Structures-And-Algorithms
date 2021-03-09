@@ -3,6 +3,14 @@
  * link：https://leetcode-cn.com/problems/basic-calculator/
  */
 
+/**
+ * (1+(4+5+2)-3)+(6+8) = + 1 + 4 + 5 + 2 - 3 + 6 + 8
+ * (1-(4+5+2)-3)+(6+8) = + 1 - 4 - 5 - 2 - 3 + 6 + 8
+ * 
+ * Each time we walk through a number, the operator for that number is known,
+ * so we only need a stack to keep track of the sign of each pair of parentheses
+ */
+
 class Solution
 {
 public:
