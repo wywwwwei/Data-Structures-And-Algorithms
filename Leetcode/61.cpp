@@ -25,14 +25,14 @@ public:
         {
             tmp = head;
             k %= n;
-            while (k-- >= 0)
+            while (k-- > 0)
                 tmp = tmp->next;
         }
         else if (n == k) // the size of list = rotate size
             return head;
 
-        ListNode *begin = head;        // begin is the node whose next = future head
-        while (tmp->next != nullptr)   // tmp is the last node
+        ListNode *begin = head;      // begin is the node whose next = future head
+        while (tmp->next != nullptr) // tmp is the last node
         {
             tmp = tmp->next;
             begin = begin->next;
