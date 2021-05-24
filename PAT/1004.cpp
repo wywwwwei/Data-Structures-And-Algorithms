@@ -1,3 +1,8 @@
+/**
+ * 1004 Counting Leaves
+ * link: https://pintia.cn/problem-sets/994805342720868352/problems/994805521431773184
+ */
+
 #include <bits/stdc++.h>
 
 using namespace std;
