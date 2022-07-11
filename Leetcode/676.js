@@ -19,11 +19,12 @@ MagicDictionary.prototype.search = function (searchWord) {
 
         let diff = 0;
         for (let i = 0; i < word.length; ++i) {
-            if (word[i] !== searchWord[i]) {
-                ++diff;
-                if (diff > 1) {
-                    break;
-                }
+            if (word[i] === searchWord[i]) {
+                continue;
+            }
+            diff++;
+            if (diff > 1) {
+                break;
             }
         }
         if (diff === 1) {
