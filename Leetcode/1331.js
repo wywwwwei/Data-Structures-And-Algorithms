@@ -7,7 +7,7 @@
  * @param {number[]} arr
  * @return {number[]}
  */
- var arrayRankTransform = function (arr) {
+var arrayRankTransform = function (arr) {
     const arrCopy = [...arr];
     arrCopy.sort((a, b) => a - b);
 
