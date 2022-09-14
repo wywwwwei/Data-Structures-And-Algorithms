@@ -4,6 +4,14 @@
  */
 
 /**
+ * XOR
+ * 000 -> 111
+ * 000 -> 101
+ * 000 -> 010
+ * 000 -> 100
+ */
+
+/**
  * @param {number} n
  * @param {number} presses
  * @return {number}
@@ -15,6 +23,9 @@ var flipLights = function (n, presses) {
         case 1:
             return (presses > 0) + 1;
         case 2:
+            /// press == 0 1
+            /// press == 1 3
+            /// press == 2 4
             return (presses > 1) + (presses > 0) * 2 + 1;
     }
     switch (presses) {
