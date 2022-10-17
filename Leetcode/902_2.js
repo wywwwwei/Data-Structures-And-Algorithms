@@ -10,7 +10,7 @@
  */
 var atMostNGivenDigitSet = function (digits, n) {
     const target = '' + n;
-    const m = digits.length, n = target.length;
+    const digitsLen = digits.length, targetLen = target.length;
     const dp = new Array(n + 1).fill(0).map(() => new Array(2).fill(0));
     dp[0][1] = 1;
     for (let i = 1; i <= n; i++) {
